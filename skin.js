@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 5.2.4/15996
 // Filename: SerdceSibiri.ggsk
-// Generated Пн апр 1 03:57:59 2024
+// Generated Пн апр 1 04:13:34 2024
 
 function pano2vrSkin(player,base) {
 	var ggSkinVars = [];
@@ -880,6 +880,117 @@ function pano2vrSkin(player,base) {
 		this._thumbnail_menu__content.appendChild(this._thumbnail_cloner);
 		this._hide_elements.appendChild(this._thumbnail_menu);
 		this.divSkin.appendChild(this._hide_elements);
+		this._button_1=document.createElement('div');
+		this._button_1__img=document.createElement('img');
+		this._button_1__img.className='ggskin ggskin_button';
+		this._button_1__img.setAttribute('src',basePath + 'images/button_1.png');
+		this._button_1__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;');
+		this._button_1__img.className='ggskin ggskin_button';
+		this._button_1__img['ondragstart']=function() { return false; };
+		me.player.checkLoaded.push(this._button_1__img);
+		this._button_1.appendChild(this._button_1__img);
+		this._button_1.ggId="Button 1";
+		this._button_1.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
+		this._button_1.ggVisible=true;
+		this._button_1.className='ggskin ggskin_button ';
+		this._button_1.ggType='button';
+		hs ='';
+		hs+='cursor : pointer;';
+		hs+='height : 28px;';
+		hs+='left : 3px;';
+		hs+='position : absolute;';
+		hs+='top : 4px;';
+		hs+='visibility : inherit;';
+		hs+='width : 95px;';
+		hs+='pointer-events:auto;';
+		this._button_1.setAttribute('style',hs);
+		this._button_1.style[domTransform + 'Origin']='50% 50%';
+		me._button_1.ggIsActive=function() {
+			return false;
+		}
+		me._button_1.ggElementNodeId=function() {
+			return me.player.getCurrentNode();
+		}
+		this._button_1.onclick=function (e) {
+			me.player.openNext("{node1}","");
+		}
+		this._button_1.ggUpdatePosition=function (useTransition) {
+		}
+		this.divSkin.appendChild(this._button_1);
+		this._button_2=document.createElement('div');
+		this._button_2__img=document.createElement('img');
+		this._button_2__img.className='ggskin ggskin_button';
+		this._button_2__img.setAttribute('src',basePath + 'images/button_2.png');
+		this._button_2__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;');
+		this._button_2__img.className='ggskin ggskin_button';
+		this._button_2__img['ondragstart']=function() { return false; };
+		me.player.checkLoaded.push(this._button_2__img);
+		this._button_2.appendChild(this._button_2__img);
+		this._button_2.ggId="Button 2";
+		this._button_2.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
+		this._button_2.ggVisible=true;
+		this._button_2.className='ggskin ggskin_button ';
+		this._button_2.ggType='button';
+		hs ='';
+		hs+='cursor : pointer;';
+		hs+='height : 28px;';
+		hs+='left : 2px;';
+		hs+='position : absolute;';
+		hs+='top : 37px;';
+		hs+='visibility : inherit;';
+		hs+='width : 95px;';
+		hs+='pointer-events:auto;';
+		this._button_2.setAttribute('style',hs);
+		this._button_2.style[domTransform + 'Origin']='50% 50%';
+		me._button_2.ggIsActive=function() {
+			return false;
+		}
+		me._button_2.ggElementNodeId=function() {
+			return me.player.getCurrentNode();
+		}
+		this._button_2.onclick=function (e) {
+			me.player.openNext("{node4}","");
+		}
+		this._button_2.ggUpdatePosition=function (useTransition) {
+		}
+		this.divSkin.appendChild(this._button_2);
+		this._button_3=document.createElement('div');
+		this._button_3__img=document.createElement('img');
+		this._button_3__img.className='ggskin ggskin_button';
+		this._button_3__img.setAttribute('src',basePath + 'images/button_3.png');
+		this._button_3__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;');
+		this._button_3__img.className='ggskin ggskin_button';
+		this._button_3__img['ondragstart']=function() { return false; };
+		me.player.checkLoaded.push(this._button_3__img);
+		this._button_3.appendChild(this._button_3__img);
+		this._button_3.ggId="Button 3";
+		this._button_3.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
+		this._button_3.ggVisible=true;
+		this._button_3.className='ggskin ggskin_button ';
+		this._button_3.ggType='button';
+		hs ='';
+		hs+='cursor : pointer;';
+		hs+='height : 28px;';
+		hs+='left : 3px;';
+		hs+='position : absolute;';
+		hs+='top : 73px;';
+		hs+='visibility : inherit;';
+		hs+='width : 95px;';
+		hs+='pointer-events:auto;';
+		this._button_3.setAttribute('style',hs);
+		this._button_3.style[domTransform + 'Origin']='50% 50%';
+		me._button_3.ggIsActive=function() {
+			return false;
+		}
+		me._button_3.ggElementNodeId=function() {
+			return me.player.getCurrentNode();
+		}
+		this._button_3.onclick=function (e) {
+			me.player.openNext("{node5}","");
+		}
+		this._button_3.ggUpdatePosition=function (useTransition) {
+		}
+		this.divSkin.appendChild(this._button_3);
 		this.divSkin.ggUpdateSize=function(w,h) {
 			me.updateSize(me.divSkin);
 		}
