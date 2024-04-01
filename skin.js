@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 5.2.4/15996
 // Filename: SerdceSibiri.ggsk
-// Generated Вт апр 2 04:49:57 2024
+// Generated Вт апр 2 04:51:03 2024
 
 function pano2vrSkin(player,base) {
 	var ggSkinVars = [];
