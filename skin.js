@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 5.2.4/15996
 // Filename: SerdceSibiri.ggsk
-// Generated Вт апр 2 04:37:15 2024
+// Generated Вт апр 2 04:49:21 2024
 
 function pano2vrSkin(player,base) {
 	var ggSkinVars = [];
@@ -936,87 +936,6 @@ function pano2vrSkin(player,base) {
 			}
 			this.__div.ggUpdatePosition=function (useTransition) {
 			}
-			this._ht_node_image=document.createElement('div');
-			this._ht_node_image__img=document.createElement('img');
-			this._ht_node_image__img.className='ggskin ggskin_svg';
-			this._ht_node_image__img.setAttribute('src',basePath + 'images/ht_node_image.svg');
-			this._ht_node_image__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;');
-			this._ht_node_image__img['ondragstart']=function() { return false; };
-			this._ht_node_image.appendChild(this._ht_node_image__img);
-			this._ht_node_image.ggId="ht_node_image";
-			this._ht_node_image.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
-			this._ht_node_image.ggVisible=true;
-			this._ht_node_image.className='ggskin ggskin_svg ';
-			this._ht_node_image.ggType='svg';
-			hs ='';
-			hs+='cursor : pointer;';
-			hs+='height : 32px;';
-			hs+='left : -16px;';
-			hs+='position : absolute;';
-			hs+='top : -16px;';
-			hs+='visibility : inherit;';
-			hs+='width : 32px;';
-			hs+='pointer-events:auto;';
-			this._ht_node_image.setAttribute('style',hs);
-			this._ht_node_image.style[domTransform + 'Origin']='50% 50%';
-			me._ht_node_image.ggIsActive=function() {
-				if ((this.parentNode) && (this.parentNode.ggIsActive)) {
-					return this.parentNode.ggIsActive();
-				}
-				return false;
-			}
-			me._ht_node_image.ggElementNodeId=function() {
-				if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
-					return this.parentNode.ggElementNodeId();
-				}
-				return me.ggNodeId;
-			}
-			this._ht_node_image.onmouseout=function (e) {
-				var flag=me.skin.__div.ggScaleActive;
-				if (me.player.transitionsDisabled) {
-					me.skin.__div.style[domTransition]='none';
-				} else {
-					me.skin.__div.style[domTransition]='all 500ms ease-out 0ms';
-				}
-				if (flag) {
-					me.skin.__div.ggParameter.sx=3;me.skin.__div.ggParameter.sy=3;
-					me.skin.__div.style[domTransform]=parameterToTransform(me.skin.__div.ggParameter);
-				} else {
-					me.skin.__div.ggParameter.sx=1.1;me.skin.__div.ggParameter.sy=1.1;
-					me.skin.__div.style[domTransform]=parameterToTransform(me.skin.__div.ggParameter);
-				}
-				me.skin.__div.ggScaleActive=!flag;
-			}
-			me._ht_node_image.ggCurrentLogicStateSize = -1;
-			this._ht_node_image.ggUpdateConditionTimer=function () {
-				var newLogicStateSize;
-				if (
-					(me.player.getViewMode() == true)
-				)
-				{
-					newLogicStateSize = 0;
-				}
-				else {
-					newLogicStateSize = -1;
-				}
-				if (me._ht_node_image.ggCurrentLogicStateSize != newLogicStateSize) {
-					me._ht_node_image.ggCurrentLogicStateSize = newLogicStateSize;
-					me._ht_node_image.style[domTransition]='width 1000ms ease 0ms, height 1000ms ease 0ms';
-					if (me._ht_node_image.ggCurrentLogicStateSize == 0) {
-						me._ht_node_image.style.width='32px';
-						me._ht_node_image.style.height='32px';
-						me.skin.updateSize(me._ht_node_image);
-					}
-					else {
-						me._ht_node_image.style.width='32px';
-						me._ht_node_image.style.height='32px';
-						me.skin.updateSize(me._ht_node_image);
-					}
-				}
-			}
-			this._ht_node_image.ggUpdatePosition=function (useTransition) {
-			}
-			this.__div.appendChild(this._ht_node_image);
 			this._tt_ht_node=document.createElement('div');
 			this._tt_ht_node__text=document.createElement('div');
 			this._tt_ht_node.className='ggskin ggskin_textdiv';
@@ -1029,11 +948,11 @@ function pano2vrSkin(player,base) {
 			hs ='';
 			hs+='z-index: 100;';
 			hs+='height : 17px;';
-			hs+='left : -64px;';
+			hs+='left : -83px;';
 			hs+='position : absolute;';
 			hs+='top : 21px;';
 			hs+='visibility : hidden;';
-			hs+='width : 115px;';
+			hs+='width : 164px;';
 			hs+='pointer-events:auto;';
 			this._tt_ht_node.setAttribute('style',hs);
 			this._tt_ht_node.style[domTransform + 'Origin']='50% 50%';
@@ -1042,7 +961,7 @@ function pano2vrSkin(player,base) {
 			hs+='cursor: default;';
 			hs+='left: 0px;';
 			hs+='top:  0px;';
-			hs+='width: 115px;';
+			hs+='width: 164px;';
 			hs+='height: 17px;';
 			hs+='border: 1px solid #c0188d;';
 			hs+='border: 1px solid rgba(192,24,141,0);';
@@ -1098,11 +1017,47 @@ function pano2vrSkin(player,base) {
 			this._tt_ht_node.ggUpdatePosition=function (useTransition) {
 			}
 			this.__div.appendChild(this._tt_ht_node);
+			this._svg_1=document.createElement('div');
+			this._svg_1__img=document.createElement('img');
+			this._svg_1__img.className='ggskin ggskin_svg';
+			this._svg_1__img.setAttribute('src',basePath + 'images/svg_1.svg');
+			this._svg_1__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;');
+			this._svg_1__img['ondragstart']=function() { return false; };
+			this._svg_1.appendChild(this._svg_1__img);
+			this._svg_1.ggId="Svg 1";
+			this._svg_1.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
+			this._svg_1.ggVisible=true;
+			this._svg_1.className='ggskin ggskin_svg ';
+			this._svg_1.ggType='svg';
+			hs ='';
+			hs+='height : 28px;';
+			hs+='left : -17px;';
+			hs+='position : absolute;';
+			hs+='top : -11px;';
+			hs+='visibility : inherit;';
+			hs+='width : 36px;';
+			hs+='pointer-events:auto;';
+			this._svg_1.setAttribute('style',hs);
+			this._svg_1.style[domTransform + 'Origin']='50% 50%';
+			me._svg_1.ggIsActive=function() {
+				if ((this.parentNode) && (this.parentNode.ggIsActive)) {
+					return this.parentNode.ggIsActive();
+				}
+				return false;
+			}
+			me._svg_1.ggElementNodeId=function() {
+				if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
+					return this.parentNode.ggElementNodeId();
+				}
+				return me.ggNodeId;
+			}
+			this._svg_1.ggUpdatePosition=function (useTransition) {
+			}
+			this.__div.appendChild(this._svg_1);
 			this.hotspotTimerEvent=function() {
 				setTimeout(function() { me.hotspotTimerEvent(); }, 10);
 				if (me.elementMouseOver['_div']) {
 				}
-				me._ht_node_image.ggUpdateConditionTimer();
 				me._tt_ht_node.ggUpdateConditionTimer();
 			}
 			this.hotspotTimerEvent();
