@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 5.2.4/15996
 // Filename: SerdceSibiri.ggsk
-// Generated Вт апр 2 04:49:21 2024
+// Generated Вт апр 2 04:49:57 2024
 
 function pano2vrSkin(player,base) {
 	var ggSkinVars = [];
@@ -1024,6 +1024,12 @@ function pano2vrSkin(player,base) {
 			this._svg_1__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;');
 			this._svg_1__img['ondragstart']=function() { return false; };
 			this._svg_1.appendChild(this._svg_1__img);
+			this._svg_1__imgo=document.createElement('img');
+			this._svg_1__imgo.className='ggskin ggskin_svg';
+			this._svg_1__imgo.setAttribute('src',basePath + 'images/svg_1__o.svg');
+			this._svg_1__imgo.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;visibility:hidden;pointer-events:none;');
+			this._svg_1__imgo['ondragstart']=function() { return false; };
+			this._svg_1.appendChild(this._svg_1__imgo);
 			this._svg_1.ggId="Svg 1";
 			this._svg_1.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
 			this._svg_1.ggVisible=true;
@@ -1050,6 +1056,14 @@ function pano2vrSkin(player,base) {
 					return this.parentNode.ggElementNodeId();
 				}
 				return me.ggNodeId;
+			}
+			this._svg_1.onmouseover=function (e) {
+				me._svg_1__img.style.visibility='hidden';
+				me._svg_1__imgo.style.visibility='inherit';
+			}
+			this._svg_1.onmouseout=function (e) {
+				me._svg_1__img.style.visibility='inherit';
+				me._svg_1__imgo.style.visibility='hidden';
 			}
 			this._svg_1.ggUpdatePosition=function (useTransition) {
 			}
