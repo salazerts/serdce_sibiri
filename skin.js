@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 5.2.4/15996
 // Filename: SerdceSibiri.ggsk
-// Generated Вт апр 2 03:35:56 2024
+// Generated Вт апр 2 04:31:09 2024
 
 function pano2vrSkin(player,base) {
 	var ggSkinVars = [];
@@ -982,10 +982,37 @@ function pano2vrSkin(player,base) {
 					me.skin.__div.ggParameter.sx=3;me.skin.__div.ggParameter.sy=3;
 					me.skin.__div.style[domTransform]=parameterToTransform(me.skin.__div.ggParameter);
 				} else {
-					me.skin.__div.ggParameter.sx=1;me.skin.__div.ggParameter.sy=1;
+					me.skin.__div.ggParameter.sx=1.1;me.skin.__div.ggParameter.sy=1.1;
 					me.skin.__div.style[domTransform]=parameterToTransform(me.skin.__div.ggParameter);
 				}
 				me.skin.__div.ggScaleActive=!flag;
+			}
+			me._ht_node_image.ggCurrentLogicStateSize = -1;
+			this._ht_node_image.ggUpdateConditionTimer=function () {
+				var newLogicStateSize;
+				if (
+					(me.player.getViewMode() == true)
+				)
+				{
+					newLogicStateSize = 0;
+				}
+				else {
+					newLogicStateSize = -1;
+				}
+				if (me._ht_node_image.ggCurrentLogicStateSize != newLogicStateSize) {
+					me._ht_node_image.ggCurrentLogicStateSize = newLogicStateSize;
+					me._ht_node_image.style[domTransition]='width 1000ms ease 0ms, height 1000ms ease 0ms';
+					if (me._ht_node_image.ggCurrentLogicStateSize == 0) {
+						me._ht_node_image.style.width='32px';
+						me._ht_node_image.style.height='32px';
+						me.skin.updateSize(me._ht_node_image);
+					}
+					else {
+						me._ht_node_image.style.width='32px';
+						me._ht_node_image.style.height='32px';
+						me.skin.updateSize(me._ht_node_image);
+					}
+				}
 			}
 			this._ht_node_image.ggUpdatePosition=function (useTransition) {
 			}
@@ -1075,6 +1102,7 @@ function pano2vrSkin(player,base) {
 				setTimeout(function() { me.hotspotTimerEvent(); }, 10);
 				if (me.elementMouseOver['_div']) {
 				}
+				me._ht_node_image.ggUpdateConditionTimer();
 				me._tt_ht_node.ggUpdateConditionTimer();
 			}
 			this.hotspotTimerEvent();
