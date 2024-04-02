@@ -13,7 +13,7 @@
       <min fov="5" tilt="-90" pan="0"/>
       <max fov="120" tilt="90" pan="360" fovfisheye="360" fovstereographic="270" scaletofit="1"/>
     </view>
-    <userdata title="" copyright="" tags="Входная группа" longitude="" latitude="" description="" datetime="" comment="" author="" customnodeid="" source="" info=""/>
+    <userdata title="Входная группа" copyright="" tags="Входная группа" longitude="" latitude="" description="" datetime="" comment="" author="" customnodeid="" source="" info=""/>
     <hotspots width="180" wordwrap="1" height="20">
       <label width="180" textcolor="0x000000" wordwrap="1" bordercolor="0x000000" borderalpha="1" border="1" height="20" backgroundalpha="1" enabled="1" borderradius="1" backgroundcolor="0xffffff" textalpha="1" background="1"/>
       <polystyle bordercolor="0x0000ff" borderalpha="1" backgroundalpha="0.2509803921568627" mode="0" handcursor="1" backgroundcolor="0x0000ff"/>
@@ -39,7 +39,7 @@
       <min fov="5" tilt="-90" pan="0"/>
       <max fov="120" tilt="90" pan="360" fovfisheye="360" fovstereographic="270" scaletofit="1"/>
     </view>
-    <userdata title="" copyright="" tags="Входная группа" longitude="" latitude="" description="" datetime="" comment="" author="" customnodeid="" source="" info=""/>
+    <userdata title="Мягкая зона" copyright="" tags="Входная группа" longitude="" latitude="" description="" datetime="" comment="" author="" customnodeid="" source="" info=""/>
     <hotspots width="180" wordwrap="1" height="20">
       <label width="180" textcolor="0x000000" wordwrap="1" bordercolor="0x000000" borderalpha="1" border="1" height="20" backgroundalpha="1" enabled="1" borderradius="1" backgroundcolor="0xffffff" textalpha="1" background="1"/>
       <polystyle bordercolor="0x0000ff" borderalpha="1" backgroundalpha="0.2509803921568627" mode="0" handcursor="1" backgroundcolor="0x0000ff"/>
@@ -63,7 +63,7 @@
       <min fov="5" tilt="-90" pan="0"/>
       <max fov="120" tilt="90" pan="360" fovfisheye="360" fovstereographic="270" scaletofit="1"/>
     </view>
-    <userdata title="" copyright="" tags="Входная группа" longitude="" latitude="" description="" datetime="" comment="" author="" customnodeid="" source="" info=""/>
+    <userdata title="Лифтовой холл" copyright="" tags="Входная группа" longitude="" latitude="" description="" datetime="" comment="" author="" customnodeid="" source="" info=""/>
     <hotspots width="180" wordwrap="1" height="20">
       <label width="180" textcolor="0x000000" wordwrap="1" bordercolor="0x000000" borderalpha="1" border="1" height="20" backgroundalpha="1" enabled="1" borderradius="1" backgroundcolor="0xffffff" textalpha="1" background="1"/>
       <polystyle bordercolor="0x0000ff" borderalpha="1" backgroundalpha="0.2509803921568627" mode="0" handcursor="1" backgroundcolor="0x0000ff"/>
@@ -87,7 +87,7 @@
       <min fov="5" tilt="-90" pan="0"/>
       <max fov="120" tilt="90" pan="360" fovfisheye="360" fovstereographic="270" scaletofit="1"/>
     </view>
-    <userdata title="" copyright="" tags="Входная группа" longitude="" latitude="" description="" datetime="" comment="" author="" customnodeid="" source="" info=""/>
+    <userdata title="Теплый тамбур" copyright="" tags="Входная группа" longitude="" latitude="" description="" datetime="" comment="" author="" customnodeid="" source="" info=""/>
     <hotspots width="180" wordwrap="1" height="20">
       <label width="180" textcolor="0x000000" wordwrap="1" bordercolor="0x000000" borderalpha="1" border="1" height="20" backgroundalpha="1" enabled="1" borderradius="1" backgroundcolor="0xffffff" textalpha="1" background="1"/>
       <polystyle bordercolor="0x0000ff" borderalpha="1" backgroundalpha="0.2509803921568627" mode="0" handcursor="1" backgroundcolor="0x0000ff"/>
@@ -113,7 +113,7 @@
       <min fov="5" tilt="-90" pan="0"/>
       <max fov="120" tilt="90" pan="360" fovfisheye="360" fovstereographic="270" scaletofit="1"/>
     </view>
-    <userdata title="" copyright="" tags="Входная группа" longitude="" latitude="" description="" datetime="" comment="" author="" customnodeid="" source="" info=""/>
+    <userdata title="Вход во двор со стороны бульвара" copyright="" tags="Входная группа" longitude="" latitude="" description="" datetime="" comment="" author="" customnodeid="" source="" info=""/>
     <hotspots width="180" wordwrap="1" height="20">
       <label width="180" textcolor="0x000000" wordwrap="1" bordercolor="0x000000" borderalpha="1" border="1" height="20" backgroundalpha="1" enabled="1" borderradius="1" backgroundcolor="0xffffff" textalpha="1" background="1"/>
       <polystyle bordercolor="0x0000ff" borderalpha="1" backgroundalpha="0.2509803921568627" mode="0" handcursor="1" backgroundcolor="0x0000ff"/>
@@ -139,7 +139,7 @@
       <min fov="5" tilt="-90" pan="0"/>
       <max fov="120" tilt="90" pan="360" fovfisheye="360" fovstereographic="270" scaletofit="1"/>
     </view>
-    <userdata title="" copyright="" tags="Входная группа" longitude="" latitude="" description="" datetime="" comment="" author="" customnodeid="" source="" info=""/>
+    <userdata title="Зоны отдыха" copyright="" tags="Входная группа" longitude="" latitude="" description="" datetime="" comment="" author="" customnodeid="" source="" info=""/>
     <hotspots width="180" wordwrap="1" height="20">
       <label width="180" textcolor="0x000000" wordwrap="1" bordercolor="0x000000" borderalpha="1" border="1" height="20" backgroundalpha="1" enabled="1" borderradius="1" backgroundcolor="0xffffff" textalpha="1" background="1"/>
       <polystyle bordercolor="0x0000ff" borderalpha="1" backgroundalpha="0.2509803921568627" mode="0" handcursor="1" backgroundcolor="0x0000ff"/>
@@ -165,7 +165,7 @@
       <min fov="5" tilt="-90" pan="0"/>
       <max fov="120" tilt="90" pan="360" fovfisheye="360" fovstereographic="270" scaletofit="1"/>
     </view>
-    <userdata title="" copyright="" tags="Входная группа" longitude="" latitude="" description="" datetime="" comment="" author="" customnodeid="" source="" info=""/>
+    <userdata title="Детские площадки" copyright="" tags="Входная группа" longitude="" latitude="" description="" datetime="" comment="" author="" customnodeid="" source="" info=""/>
     <hotspots width="180" wordwrap="1" height="20">
       <label width="180" textcolor="0x000000" wordwrap="1" bordercolor="0x000000" borderalpha="1" border="1" height="20" backgroundalpha="1" enabled="1" borderradius="1" backgroundcolor="0xffffff" textalpha="1" background="1"/>
       <polystyle bordercolor="0x0000ff" borderalpha="1" backgroundalpha="0.2509803921568627" mode="0" handcursor="1" backgroundcolor="0x0000ff"/>

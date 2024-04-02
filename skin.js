@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 5.2.4/15996
 // Filename: SerdceSibiri.ggsk
-// Generated Вт апр 2 05:22:42 2024
+// Generated Вт апр 2 06:07:48 2024
 
 function pano2vrSkin(player,base) {
 	var ggSkinVars = [];
@@ -148,7 +148,7 @@ function pano2vrSkin(player,base) {
 		hs+='top : 0px;';
 		this._thumbnail_menu__content.setAttribute('style',hs);
 		this._thumbnail_menu.ggId="Thumbnail Menu";
-		this._thumbnail_menu.ggTop=-78;
+		this._thumbnail_menu.ggTop=-96;
 		this._thumbnail_menu.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
 		this._thumbnail_menu.ggVisible=true;
 		this._thumbnail_menu.className='ggskin ggskin_scrollarea ';
@@ -156,14 +156,14 @@ function pano2vrSkin(player,base) {
 		hs ='';
 		hs+='-webkit-overflow-scrolling : touch;';
 		hs+='border : 1px solid rgba(0, 0, 0, 0);';
-		hs+='height : 78px;';
-		hs+='left : 600px;';
+		hs+='height : 96px;';
+		hs+='left : 0px;';
 		hs+='overflow-x : auto;';
 		hs+='overflow-y : auto;';
 		hs+='position : absolute;';
-		hs+='top : -78px;';
+		hs+='top : -96px;';
 		hs+='visibility : inherit;';
-		hs+='width : 500.75%;';
+		hs+='width : 500.6%;';
 		hs+='pointer-events:auto;';
 		this._thumbnail_menu.setAttribute('style',hs);
 		this._thumbnail_menu.style[domTransform + 'Origin']='50% 50%';
@@ -194,7 +194,7 @@ function pano2vrSkin(player,base) {
 		this._thumbnail_cloner=document.createElement('div');
 		this._thumbnail_cloner.ggNumRepeat = 1;
 		this._thumbnail_cloner.ggWidth = 98;
-		this._thumbnail_cloner.ggHeight = 60;
+		this._thumbnail_cloner.ggHeight = 81;
 		this._thumbnail_cloner.ggUpdating = false;
 		this._thumbnail_cloner.ggFilter = [];
 		this._thumbnail_cloner.ggUpdate = function(filter) {
@@ -267,11 +267,11 @@ function pano2vrSkin(player,base) {
 		this._thumbnail_cloner.className='ggskin ggskin_cloner ';
 		this._thumbnail_cloner.ggType='cloner';
 		hs ='';
-		hs+='height : 59px;';
-		hs+='left : 5px;';
+		hs+='height : 80px;';
+		hs+='left : 3px;';
 		hs+='overflow : visible;';
 		hs+='position : absolute;';
-		hs+='top : 8px;';
+		hs+='top : 10px;';
 		hs+='visibility : inherit;';
 		hs+='width : 97px;';
 		hs+='pointer-events:none;';
@@ -1105,7 +1105,7 @@ function pano2vrSkin(player,base) {
 		this.elementMouseDown=[];
 		this.elementMouseOver=[];
 		this.__div=document.createElement('div');
-		this.__div.setAttribute('style','position: absolute; left: 0px; top: 0px; width: 98px; height: 60px; visibility: inherit;');
+		this.__div.setAttribute('style','position: absolute; left: 0px; top: 0px; width: 98px; height: 81px; visibility: inherit;');
 		this.__div.ggIsActive = function() {
 			return me.player.getCurrentNode()==me.ggNodeId;
 		}
@@ -1132,7 +1132,7 @@ function pano2vrSkin(player,base) {
 		hs+='height : 60px;';
 		hs+='left : -47px;';
 		hs+='position : absolute;';
-		hs+='top : 2px;';
+		hs+='top : 20px;';
 		hs+='visibility : inherit;';
 		hs+='width : 100px;';
 		hs+='pointer-events:auto;';
@@ -1146,6 +1146,15 @@ function pano2vrSkin(player,base) {
 		}
 		this._thumbnail_nodeimage.onclick=function (e) {
 			me.player.openNext("{"+me.ggNodeId+"}","");
+		}
+		this._thumbnail_nodeimage.onmouseover=function (e) {
+			me.elementMouseOver['thumbnail_nodeimage']=true;
+		}
+		this._thumbnail_nodeimage.onmouseout=function (e) {
+			me.elementMouseOver['thumbnail_nodeimage']=false;
+		}
+		this._thumbnail_nodeimage.ontouchend=function (e) {
+			me.elementMouseOver['thumbnail_nodeimage']=false;
 		}
 		this._thumbnail_nodeimage.ggUpdatePosition=function (useTransition) {
 			if (useTransition==='undefined') {
@@ -1161,7 +1170,7 @@ function pano2vrSkin(player,base) {
 		}
 		this._thumbnail_active=document.createElement('div');
 		this._thumbnail_active.ggId="Thumbnail Active";
-		this._thumbnail_active.ggLeft=-50;
+		this._thumbnail_active.ggLeft=-49;
 		this._thumbnail_active.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
 		this._thumbnail_active.ggVisible=true;
 		this._thumbnail_active.className='ggskin ggskin_rectangle ';
@@ -1170,9 +1179,9 @@ function pano2vrSkin(player,base) {
 		hs+='border : 3px solid #000000;';
 		hs+='cursor : default;';
 		hs+='height : 54px;';
-		hs+='left : -51px;';
+		hs+='left : -50px;';
 		hs+='position : absolute;';
-		hs+='top : -1px;';
+		hs+='top : 0px;';
 		hs+='visibility : inherit;';
 		hs+='width : 91px;';
 		hs+='pointer-events:auto;';
@@ -1243,25 +1252,23 @@ function pano2vrSkin(player,base) {
 					this.style.left=(this.ggLeft - 0 + w/2) + 'px';
 			}
 		}
-		this._thumbnail_nodeimage.appendChild(this._thumbnail_active);
 		this._text_1=document.createElement('div');
 		this._text_1__text=document.createElement('div');
 		this._text_1.className='ggskin ggskin_textdiv';
 		this._text_1.ggTextDiv=this._text_1__text;
 		this._text_1.ggId="Text 1";
-		this._text_1.ggLeft=-657;
-		this._text_1.ggTop=-312;
+		this._text_1.ggLeft=-45;
 		this._text_1.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
 		this._text_1.ggVisible=true;
 		this._text_1.className='ggskin ggskin_text ';
 		this._text_1.ggType='text';
 		hs ='';
 		hs+='height : 19px;';
-		hs+='left : -657px;';
+		hs+='left : -47px;';
 		hs+='position : absolute;';
-		hs+='top : -312px;';
+		hs+='top : -25px;';
 		hs+='visibility : inherit;';
-		hs+='width : 97px;';
+		hs+='width : 87px;';
 		hs+='pointer-events:auto;';
 		this._text_1.setAttribute('style',hs);
 		this._text_1.style[domTransform + 'Origin']='50% 50%';
@@ -1269,10 +1276,11 @@ function pano2vrSkin(player,base) {
 		hs+='cursor: default;';
 		hs+='left: 0px;';
 		hs+='top:  0px;';
-		hs+='width: 97px;';
+		hs+='width: 87px;';
 		hs+='height: 19px;';
+		hs+='background: #000000;';
 		hs+='border: 1px solid #000000;';
-		hs+='color: #000000;';
+		hs+='color: rgba(255,255,255,1);';
 		hs+='text-align: center;';
 		hs+='white-space: nowrap;';
 		hs+='padding: 0px 1px 0px 1px;';
@@ -1292,6 +1300,15 @@ function pano2vrSkin(player,base) {
 			}
 			return me.player.getCurrentNode();
 		}
+		this._text_1.onmouseover=function (e) {
+			me.elementMouseOver['text_1']=true;
+		}
+		this._text_1.onmouseout=function (e) {
+			me.elementMouseOver['text_1']=false;
+		}
+		this._text_1.ontouchend=function (e) {
+			me.elementMouseOver['text_1']=false;
+		}
 		this._text_1.ggUpdatePosition=function (useTransition) {
 			if (useTransition==='undefined') {
 				useTransition = false;
@@ -1301,12 +1318,11 @@ function pano2vrSkin(player,base) {
 			}
 			if (this.parentNode) {
 				var w=this.parentNode.offsetWidth;
-					this.style.left=(this.ggLeft - 0 + w/2) + 'px';
-				var h=this.parentNode.offsetHeight;
-					this.style.top=(this.ggTop - 0 + h/2) + 'px';
+					this.style.left=(this.ggLeft - 3 + w/2) + 'px';
 			}
 		}
-		this._thumbnail_nodeimage.appendChild(this._text_1);
+		this._thumbnail_active.appendChild(this._text_1);
+		this._thumbnail_nodeimage.appendChild(this._thumbnail_active);
 		this.__div.appendChild(this._thumbnail_nodeimage);
 	};
 	this.addSkin();
