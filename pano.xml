@@ -91,7 +91,7 @@
     <hotspots width="180" wordwrap="1" height="20">
       <label width="180" textcolor="0x000000" wordwrap="1" bordercolor="0x000000" borderalpha="1" border="1" height="20" backgroundalpha="1" enabled="1" borderradius="1" backgroundcolor="0xffffff" textalpha="1" background="1"/>
       <polystyle bordercolor="0x0000ff" borderalpha="1" backgroundalpha="0.2509803921568627" mode="0" handcursor="1" backgroundcolor="0x0000ff"/>
-      <hotspot title="Вход во вдвор со стороны бульвара" id="Point01" tilt="-0.17" description="" pan="-1.44" url="{node5}" target="" skinid="ht_node"/>
+      <hotspot title="Вход во двор со стороны бульвара" id="Point01" tilt="-0.17" description="" pan="-1.44" url="{node5}" target="" skinid="ht_node"/>
       <hotspot title="Входная группа" id="Point02" tilt="2.47" description="" pan="-176.43" url="{node1}" target="" skinid="ht_node"/>
     </hotspots>
     <media/>
