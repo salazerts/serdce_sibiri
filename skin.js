@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 5.2.4/15996
 // Filename: SerdceSibiri.ggsk
-// Generated Вт апр 2 05:08:52 2024
+// Generated Вт апр 2 05:22:42 2024
 
 function pano2vrSkin(player,base) {
 	var ggSkinVars = [];
@@ -1244,6 +1244,69 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		this._thumbnail_nodeimage.appendChild(this._thumbnail_active);
+		this._text_1=document.createElement('div');
+		this._text_1__text=document.createElement('div');
+		this._text_1.className='ggskin ggskin_textdiv';
+		this._text_1.ggTextDiv=this._text_1__text;
+		this._text_1.ggId="Text 1";
+		this._text_1.ggLeft=-657;
+		this._text_1.ggTop=-312;
+		this._text_1.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
+		this._text_1.ggVisible=true;
+		this._text_1.className='ggskin ggskin_text ';
+		this._text_1.ggType='text';
+		hs ='';
+		hs+='height : 19px;';
+		hs+='left : -657px;';
+		hs+='position : absolute;';
+		hs+='top : -312px;';
+		hs+='visibility : inherit;';
+		hs+='width : 97px;';
+		hs+='pointer-events:auto;';
+		this._text_1.setAttribute('style',hs);
+		this._text_1.style[domTransform + 'Origin']='50% 50%';
+		hs ='position:absolute;';
+		hs+='cursor: default;';
+		hs+='left: 0px;';
+		hs+='top:  0px;';
+		hs+='width: 97px;';
+		hs+='height: 19px;';
+		hs+='border: 1px solid #000000;';
+		hs+='color: #000000;';
+		hs+='text-align: center;';
+		hs+='white-space: nowrap;';
+		hs+='padding: 0px 1px 0px 1px;';
+		hs+='overflow: hidden;';
+		this._text_1__text.setAttribute('style',hs);
+		this._text_1__text.innerHTML=me.ggUserdata.title;
+		this._text_1.appendChild(this._text_1__text);
+		me._text_1.ggIsActive=function() {
+			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
+				return this.parentNode.ggIsActive();
+			}
+			return false;
+		}
+		me._text_1.ggElementNodeId=function() {
+			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
+				return this.parentNode.ggElementNodeId();
+			}
+			return me.player.getCurrentNode();
+		}
+		this._text_1.ggUpdatePosition=function (useTransition) {
+			if (useTransition==='undefined') {
+				useTransition = false;
+			}
+			if (!useTransition) {
+				this.style[domTransition]='none';
+			}
+			if (this.parentNode) {
+				var w=this.parentNode.offsetWidth;
+					this.style.left=(this.ggLeft - 0 + w/2) + 'px';
+				var h=this.parentNode.offsetHeight;
+					this.style.top=(this.ggTop - 0 + h/2) + 'px';
+			}
+		}
+		this._thumbnail_nodeimage.appendChild(this._text_1);
 		this.__div.appendChild(this._thumbnail_nodeimage);
 	};
 	this.addSkin();
