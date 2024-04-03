@@ -113,7 +113,7 @@
       <min tilt="-90" pan="0" fov="5"/>
       <max tilt="90" pan="360" scaletofit="1" fovfisheye="360" fov="120" fovstereographic="270"/>
     </view>
-    <userdata info="" customnodeid="" copyright="" title="Вход во двор со стороны бульвара" author="" comment="" source="" datetime="" tags="Входная группа" heading="0" latitude="" nodeid="node5" description="" longitude=""/>
+    <userdata info="" customnodeid="" copyright="" title="Вход во двор" author="" comment="" source="" datetime="" tags="Входная группа" heading="0" latitude="" nodeid="node5" description="" longitude=""/>
     <hotspots wordwrap="1" height="20" width="180">
       <label enabled="1" textcolor="0x000000" wordwrap="1" textalpha="1" background="1" bordercolor="0x000000" height="20" backgroundcolor="0xffffff" backgroundalpha="1" borderalpha="1" width="180" border="1" borderradius="1"/>
       <polystyle mode="0" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" backgroundalpha="0.25098" borderalpha="1"/>
