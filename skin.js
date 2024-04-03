@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 5.2.4/15996
 // Filename: SerdceSibiri.ggsk
-// Generated Вт апр 2 19:17:00 2024
+// Generated Ср апр 3 04:03:05 2024
 
 function pano2vrSkin(player,base) {
 	var ggSkinVars = [];
@@ -148,7 +148,7 @@ function pano2vrSkin(player,base) {
 		hs+='top : 0px;';
 		this._thumbnail_menu__content.setAttribute('style',hs);
 		this._thumbnail_menu.ggId="Thumbnail Menu";
-		this._thumbnail_menu.ggTop=-132;
+		this._thumbnail_menu.ggTop=-96;
 		this._thumbnail_menu.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
 		this._thumbnail_menu.ggVisible=true;
 		this._thumbnail_menu.className='ggskin ggskin_scrollarea ';
@@ -156,12 +156,12 @@ function pano2vrSkin(player,base) {
 		hs ='';
 		hs+='-webkit-overflow-scrolling : touch;';
 		hs+='border : 1px solid rgba(0, 0, 0, 0);';
-		hs+='height : 132px;';
+		hs+='height : 96px;';
 		hs+='left : 600px;';
 		hs+='overflow-x : auto;';
 		hs+='overflow-y : auto;';
 		hs+='position : absolute;';
-		hs+='top : -132px;';
+		hs+='top : -96px;';
 		hs+='visibility : inherit;';
 		hs+='width : 500.6%;';
 		hs+='pointer-events:auto;';
@@ -194,7 +194,7 @@ function pano2vrSkin(player,base) {
 		this._thumbnail_cloner=document.createElement('div');
 		this._thumbnail_cloner.ggNumRepeat = 1;
 		this._thumbnail_cloner.ggWidth = 98;
-		this._thumbnail_cloner.ggHeight = 120;
+		this._thumbnail_cloner.ggHeight = 81;
 		this._thumbnail_cloner.ggUpdating = false;
 		this._thumbnail_cloner.ggFilter = [];
 		this._thumbnail_cloner.ggUpdate = function(filter) {
@@ -267,7 +267,7 @@ function pano2vrSkin(player,base) {
 		this._thumbnail_cloner.className='ggskin ggskin_cloner ';
 		this._thumbnail_cloner.ggType='cloner';
 		hs ='';
-		hs+='height : 119px;';
+		hs+='height : 80px;';
 		hs+='left : 3px;';
 		hs+='overflow : visible;';
 		hs+='position : absolute;';
@@ -1105,7 +1105,7 @@ function pano2vrSkin(player,base) {
 		this.elementMouseDown=[];
 		this.elementMouseOver=[];
 		this.__div=document.createElement('div');
-		this.__div.setAttribute('style','position: absolute; left: 0px; top: 0px; width: 98px; height: 120px; visibility: inherit;');
+		this.__div.setAttribute('style','position: absolute; left: 0px; top: 0px; width: 98px; height: 81px; visibility: inherit;');
 		this.__div.ggIsActive = function() {
 			return me.player.getCurrentNode()==me.ggNodeId;
 		}
@@ -1122,7 +1122,7 @@ function pano2vrSkin(player,base) {
 		this._thumbnail_nodeimage__img['ondragstart']=function() { return false; };
 		this._thumbnail_nodeimage.appendChild(this._thumbnail_nodeimage__img);
 		this._thumbnail_nodeimage.ggId="Thumbnail NodeImage";
-		this._thumbnail_nodeimage.ggLeft=-48;
+		this._thumbnail_nodeimage.ggLeft=-47;
 		this._thumbnail_nodeimage.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
 		this._thumbnail_nodeimage.ggVisible=true;
 		this._thumbnail_nodeimage.className='ggskin ggskin_nodeimage ';
@@ -1130,9 +1130,9 @@ function pano2vrSkin(player,base) {
 		hs ='';
 		hs+='cursor : pointer;';
 		hs+='height : 60px;';
-		hs+='left : -48px;';
+		hs+='left : -47px;';
 		hs+='position : absolute;';
-		hs+='top : 58px;';
+		hs+='top : 20px;';
 		hs+='visibility : inherit;';
 		hs+='width : 100px;';
 		hs+='pointer-events:auto;';
@@ -1263,10 +1263,10 @@ function pano2vrSkin(player,base) {
 		this._text_1.className='ggskin ggskin_text ';
 		this._text_1.ggType='text';
 		hs ='';
-		hs+='height : 51px;';
+		hs+='height : 19px;';
 		hs+='left : -47px;';
 		hs+='position : absolute;';
-		hs+='top : -57px;';
+		hs+='top : -25px;';
 		hs+='visibility : inherit;';
 		hs+='width : 87px;';
 		hs+='pointer-events:auto;';
@@ -1277,12 +1277,12 @@ function pano2vrSkin(player,base) {
 		hs+='left: 0px;';
 		hs+='top:  0px;';
 		hs+='width: 87px;';
-		hs+='height: 51px;';
+		hs+='height: 19px;';
 		hs+='background: #000000;';
 		hs+='border: 1px solid #000000;';
 		hs+='color: rgba(255,255,255,1);';
 		hs+='text-align: center;';
-		hs+='white-space: pre-wrap;';
+		hs+='white-space: nowrap;';
 		hs+='padding: 0px 1px 0px 1px;';
 		hs+='overflow: hidden;';
 		this._text_1__text.setAttribute('style',hs);
