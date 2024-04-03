@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 6.1.14/18105
 // Filename: SerdceSibiri.ggsk
-// Generated 2024-04-03T08:05:16
+// Generated 2024-04-03T08:31:51
 
 function pano2vrSkin(player,base) {
 	var me=this;
@@ -515,7 +515,7 @@ function pano2vrSkin(player,base) {
 		hs+='border : 0px solid #000000;';
 		hs+='bottom : 0px;';
 		hs+='height : 96px;';
-		hs+='left : 600px;';
+		hs+='left : 0px;';
 		hs+='overflow : hidden;';
 		hs+='position : absolute;';
 		hs+='visibility : inherit;';
@@ -682,6 +682,9 @@ function pano2vrSkin(player,base) {
 				for(i = 0; i < me._thumbnail_cloner.ggInstances.length; i++) {
 					if (me._thumbnail_cloner.ggInstances[i]._thumbnail_active && me._thumbnail_cloner.ggInstances[i]._thumbnail_active.logicBlock_bordercolor) {
 						me._thumbnail_cloner.ggInstances[i]._thumbnail_active.logicBlock_bordercolor();
+					}
+					if (me._thumbnail_cloner.ggInstances[i]._text_1 && me._thumbnail_cloner.ggInstances[i]._text_1.logicBlock_visible) {
+						me._thumbnail_cloner.ggInstances[i]._text_1.logicBlock_visible();
 					}
 				}
 			}
@@ -1454,19 +1457,11 @@ function pano2vrSkin(player,base) {
 		}
 		me._ht_node.onmouseover=function (e) {
 			player.setActiveHotspot(me.hotspot);
-			me.elementMouseOver['ht_node']=true;
-			me._tt_ht_node.logicBlock_visible();
 			skin.hotspotProxyOver(me.hotspot.id, me.hotspot.url);
 		}
 		me._ht_node.onmouseout=function (e) {
 			player.setActiveHotspot(null);
-			me.elementMouseOver['ht_node']=false;
-			me._tt_ht_node.logicBlock_visible();
 			skin.hotspotProxyOut(me.hotspot.id, me.hotspot.url);
-		}
-		me._ht_node.ontouchend=function (e) {
-			me.elementMouseOver['ht_node']=false;
-			me._tt_ht_node.logicBlock_visible();
 		}
 		me._ht_node.ggActivate=function () {
 			player.changeFovLog(-2,true);
@@ -1540,7 +1535,7 @@ function pano2vrSkin(player,base) {
 		me._tt_ht_node.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
-				((me.elementMouseOver['ht_node'] == true))
+				((me.elementMouseOver['tt_ht_node'] == true))
 			)
 			{
 				newLogicStateVisible = 0;
@@ -1560,6 +1555,25 @@ function pano2vrSkin(player,base) {
 					me._tt_ht_node.ggVisible=false;
 				}
 			}
+		}
+		me._tt_ht_node.onmouseover=function (e) {
+			me.elementMouseOver['tt_ht_node']=true;
+			me._tt_ht_node.logicBlock_visible();
+		}
+		me._tt_ht_node.onmouseout=function (e) {
+			if (e && e.toElement) {
+				var current = e.toElement;
+				while (current = current.parentNode) {
+				if (current == me._tt_ht_node__text)
+					return;
+				}
+			}
+			me.elementMouseOver['tt_ht_node']=false;
+			me._tt_ht_node.logicBlock_visible();
+		}
+		me._tt_ht_node.ontouchend=function (e) {
+			me.elementMouseOver['tt_ht_node']=false;
+			me._tt_ht_node.logicBlock_visible();
 		}
 		me._tt_ht_node.ggUpdatePosition=function (useTransition) {
 		}
@@ -1960,8 +1974,33 @@ function pano2vrSkin(player,base) {
 			}
 			return player.getCurrentNode();
 		}
+		me._text_1.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((me.elementMouseOver['text_1'] == true))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._text_1.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._text_1.ggCurrentLogicStateVisible = newLogicStateVisible;
+				me._text_1.style[domTransition]='';
+				if (me._text_1.ggCurrentLogicStateVisible == 0) {
+					me._text_1.style.visibility=(Number(me._text_1.style.opacity)>0||!me._text_1.style.opacity)?'inherit':'hidden';
+					me._text_1.ggVisible=true;
+				}
+				else {
+					me._text_1.style.visibility=(Number(me._text_1.style.opacity)>0||!me._text_1.style.opacity)?'inherit':'hidden';
+					me._text_1.ggVisible=true;
+				}
+			}
+		}
 		me._text_1.onmouseover=function (e) {
 			me.elementMouseOver['text_1']=true;
+			me._text_1.logicBlock_visible();
 		}
 		me._text_1.onmouseout=function (e) {
 			if (e && e.toElement) {
@@ -1972,9 +2011,11 @@ function pano2vrSkin(player,base) {
 				}
 			}
 			me.elementMouseOver['text_1']=false;
+			me._text_1.logicBlock_visible();
 		}
 		me._text_1.ontouchend=function (e) {
 			me.elementMouseOver['text_1']=false;
+			me._text_1.logicBlock_visible();
 		}
 		me._text_1.ggUpdatePosition=function (useTransition) {
 			if (useTransition==='undefined') {
